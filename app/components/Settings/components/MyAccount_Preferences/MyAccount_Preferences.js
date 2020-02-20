@@ -53,6 +53,13 @@ const MyAccount = props => {
           checked={props.settings.sounds}
           onChange={props.setSounds}
         />
+        <SwitchSetting
+          mainText={t('EnableDiscordRPCTitle', 'Enable Discord RPC')}
+          description={t('EnableDiscordRPCDescription', 'Enable the Discord RPC Status')}
+          icon="sound"
+          checked={props.settings.discord}
+          onChange={props.setDiscord}
+        />
         <SelectSetting
           mainText={<span>{t('ReleaseChannel', 'GDLauncher Release Channel')}</span>}
           description={t('ReleaseChannelDescription', 'Stable updates once a month, beta does update more often but it may have more bugs.')}

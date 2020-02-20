@@ -80,5 +80,12 @@ export const THEMES = {
     'secondary-color-1': '#282c2f',
     'secondary-color-2': '#14181b',
     'secondary-color-3': '#000407'
+  },
+  manjaroBreeze: {
+    name: 'Manjaro Breeze',
+    primary: "#00ce99",
+    'secondary-color-1': '#3F4544',
+    'secondary-color-2': '#343938',
+    'secondary-color-3': '#272A2A'
   }
 };

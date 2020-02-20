@@ -26,60 +26,23 @@ export default props => {
 
         <h2 className={styles.hrTextYellow}>WARNING!</h2>
         <span className={styles.summary}>
-          This update contains <span style={{ color: '#f39c12' }}>breaking changes</span>. If your instances don't run, try right-clicking on them and select "Repair"
+          This update is <span style={{ color: '#f39c12' }}>unoffical</span>. Please do not report bug reports to the main Issue Tracker.
         </span>
         <div style={{ margin: 15 }} />
         <h2 className={styles.hrTextGreen}>SOME COOL NEW STUFF</h2>
         <div className={styles.subHrList}>
           <ul>
             <ChangelogRow
-              main="Added a crash handler"
-              secondary=" when things go wrong xD"
+              main="Added Some Portable Builds"
+              secondary=" For people who don't like installing"
             />
             <ChangelogRow
-              main="Added java memory override for instances"
-              secondary=" yeeee"
+              main="Improved our Curse Exporter"
+              secondary=" for people who make Curse Modpacks"
             />
             <ChangelogRow
-              main="Added java arguments override for instances"
-              secondary=" yeeee"
-            />
-            <ChangelogRow
-              main="Added support for Minecraft Forge 1.13"
-              secondary=". Don't tilt if it looks like it's frozen, it may take a while"
-            />
-            <ChangelogRow
-              main="Added support for custom path for instances"
-              secondary=". After changing it, you'll need to restart the launcher"
-            />
-            <ChangelogRow
-              main="When importing a zip, a default name is suggested"
-              secondary=". You'll have more time to play now!!"
-            />
-          </ul>
-        </div>
-        <h2 className={styles.hrTextRed}>SOME BUGFIXES</h2>
-        <div className={styles.subHrList}>
-          <ul>
-            <ChangelogRow
-              main="Fixed download progress bar zindex"
-              secondary=" lel"
-            />
-            <ChangelogRow
-              main="Some improvements in the mods manager"
-              secondary=", we're still working on it though"
-            />
-            <ChangelogRow
-              main="The mods counter now shows the correct number of installed mods"
-              secondary=", ouga buga"
-            />
-            <ChangelogRow
-              main="Finally fixed the login token!!"
-              secondary=", you won't need to login every time ever again :)"
-            />
-            <ChangelogRow
-              main="Even though you don't see them"
-              secondary=", we fixed and improved a lot of under-the-hood stuff. Enjoyy!"
+              main="Removed our Discord RPC Support"
+              secondary=" we are listening"
             />
           </ul>
         </div>

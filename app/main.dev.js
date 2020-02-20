@@ -137,20 +137,6 @@ if (minimist(process.argv.slice(1)).i) {
       splash.destroy();
 
 
-      // Sets the DISCORD-RPC
-      const clientId = '555898932467597312';
-      let rpc = new DiscordRPC.Client({ transport: 'ipc' });
-      rpc.once('ready', () => {
-        rpc.setActivity({
-          details: `Becoming a Gorilla`,
-          state: 'Grrrrrrrr',
-          startTimestamp: Math.floor(Date.now() / 1000),
-          largeImageKey: 'default_big',
-          largeImageText: 'GDLauncher - A Custom Minecraft Launcher',
-          instance: false,
-        });
-      });
-      rpc.login({ clientId }).catch(log.error);
 
       autoUpdater.logger = log;
       autoUpdater.autoDownload = false;
