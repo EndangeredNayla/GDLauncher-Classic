@@ -32,7 +32,7 @@ const primaryPresets = [
 ];
 
 const secondaryPresets = [
-  '#34495e',
+  '#212b36',
   '#2c3e50',
   '#95a5a6',
   '#bdc3c7',

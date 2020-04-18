@@ -77,7 +77,7 @@ function Login(props) {
         }}
       >
         <div className={styles.login_form}>
-          <h1 style={{ textAlign: 'center', fontSize: 30 }}>{t('MojangLogin', 'Mojang Login')}</h1>
+          <h1 style={{ textAlign: 'center', fontSize: 30 }}>{t('MojangLogin', 'Minecraft Login')}</h1>
           <Form onSubmit={handleSubmit}>
             <FormItem>
               {getFieldDecorator('username', {

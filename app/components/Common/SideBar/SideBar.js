@@ -77,125 +77,13 @@ const SideBar = props => {
     <aside className={styles.sidenav}>
       <div className={styles.account}>
         <div className={styles.header}>
-          <span>
-            <CIcon size={32}>
-              {props.username && props.username.charAt(0).toUpperCase()}
-            </CIcon>
-          </span>
-          <span>{props.username}</span>
           <div onClick={() => props.logout()}>
             <FontAwesomeIcon icon={faSignOutAlt} className={styles.logout} />
           </div>
         </div>
       </div>
-      <hr />
-      <div className={styles.instanceTitle}>
-        <h2>Bookmarked Servers</h2>
-        No server
-      </div>
-      <hr />
-      <div className={styles.instanceTitle}>
-        <h2>Instance Overview</h2>
-        {instanceData !== null ? (
-          <div style={{ marginTop: 10 }}>
-            <h3 style={{ color: '#c2c2c2' }}>{props.selectedInstance}</h3>
-            <img
-              src={instanceData.thumbnail || vanillaCover}
-              style={{
-                position: 'relative',
-                left:
-                  instanceData.forgeVersion === null || instanceData.thumbnail
-                    ? 0
-                    : 25,
-                height: 100,
-                width: 150,
-                objectFit: 'cover',
-                borderRadius: 2
-              }}
-            />
-            {instanceData.forgeVersion !== null && !instanceData.thumbnail && (
-              <img
-                src={forgeIcon}
-                style={{
-                  position: 'relative',
-                  width: 50,
-                  height: 50,
-                  top: -25,
-                  right: 25,
-                  borderRadius: '2px'
-                }}
-              />
-            )}
-            <div
-              style={{
-                position: 'relative',
-                top: 30,
-                background: '#c0392b',
-                width: 150,
-                height: 30,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                left: 25
-              }}
-            >
-              <span style={{ padding: '0 5px' }}>MC version:</span>
-              <span style={{ padding: '0 5px' }}>{instanceData.version}</span>
-            </div>
-            {instanceData.forgeVersion !== null && (
-              <div
-                style={{
-                  position: 'relative',
-                  top: 40,
-                  background: '#f39c12',
-                  width: 150,
-                  height: 30,
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  left: 25
-                }}
-              >
-                <span style={{ padding: '0 5px' }}>mods:</span>
-                <span style={{ padding: '0 5px' }}>{instanceData.mods}</span>
-              </div>
-            )}
-            <div
-              style={{
-                position: 'relative',
-                top: instanceData.forgeVersion !== null ? 50 : 40,
-                background: '#27ae60',
-                width: 150,
-                height: 30,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                left: 25
-              }}
-            >
-              <span style={{ padding: '0 5px' }}>Played for:</span>
-              <span style={{ padding: '0 5px' }}>
-                {instanceData.timePlayed && instanceData.timePlayed !== null
-                  ? instanceData.timePlayed
-                  : '0'}{' '}
-                m
-              </span>
-            </div>
-          </div>
-        ) : (
-          'No instance selected'
-        )}
-      </div>
       <div className={styles.scroller} />
-      <hr style={{ margin: 0 }} />
       <div className={styles.socialsContainer}>
-        {/* eslint-disable */}
-        {/* <SocialIcon icon="twitter" url="https://twitter.com/gorilladevs" /> */}
-        <SocialIcon icon={faFacebook} url="https://facebook.com/gorilladevs" />
-        <SocialIcon
-          icon={faDiscord}
-          url="https://discordapp.com/invite/4cGYzen"
-        />
         <span className={styles.version}>
           <Link to={{ pathname: '/changelogs', state: { modal: true } }}>
             v{require('../../../../package.json').version}

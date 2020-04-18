@@ -26,7 +26,7 @@ export default props => {
         >
           <Link to="/home" draggable="false" className={styles.a}>
             <FontAwesomeIcon icon={faHome} className={styles.i} />
-            HOME
+            Home
           </Link>
         </li>
         <li
@@ -36,23 +36,9 @@ export default props => {
         >
           <Link to="/dmanager" draggable="false" className={styles.a}>
             <FontAwesomeIcon icon={faPlay} className={styles.i} />
-            INSTANCES
+            Instances
           </Link>
         </li>
-        <li
-          className={`${styles.li} ${
-            isLocation('/curseModpacksBrowser') ? styles.activeLink : null
-          }`}
-        >
-          <Link
-            to="/curseModpacksBrowser"
-            draggable="false"
-            className={styles.a}
-          >
-            <FontAwesomeIcon icon={faThList} className={styles.i} />
-            MODPACKS
-          </Link>
-        </li>   
       </ul>
     </div>
   );

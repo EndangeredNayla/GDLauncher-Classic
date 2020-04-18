@@ -32,7 +32,7 @@ const primaryColor =
 const secondaryColor =
   settings && settings['secondary-color-1']
     ? settings['secondary-color-1']
-    : '#34495e';
+    : '#212b36';
 
 if (minimist(process.argv.slice(1)).i) {
   cli(process.argv, () => app.quit());

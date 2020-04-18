@@ -19,44 +19,29 @@ export default props => {
     <Modal
       history={props.history}
       unMount={unMount}
-      title={`WHAT'S NEW IN v${require('../../../package.json').version}`}
+      title={`GDLauncher Classic: ${require('../../../package.json').version} Changelog`}
       style={{ height: '70vh', width: 540 }}
     >
       <div className={styles.container}>
 
-        <h2 className={styles.hrTextYellow}>WARNING!</h2>
+        <h2 className={styles.hrTextYellow}>GDLauncher Classic</h2>
         <span className={styles.summary}>
-          This update is <span style={{ color: '#f39c12' }}>unoffical</span>. Please do not report bug reports to the main Issue Tracker.
+          Changelog
         </span>
         <div style={{ margin: 15 }} />
-        <h2 className={styles.hrTextGreen}>SOME COOL NEW STUFF</h2>
         <div className={styles.subHrList}>
           <ul>
             <ChangelogRow
-              main="Added Some Portable Builds"
-              secondary=" For people who don't like installing"
+              main="Fixed the Mojang Login from becoming Unauthenticated"
             />
             <ChangelogRow
-              main="Improved our Curse Exporter"
-              secondary=" for people who make Curse Modpacks"
+              main="Fixed some issues relating to download Curse Modpacks"
             />
             <ChangelogRow
-              main="Removed our Discord RPC Support"
-              secondary=" we are listening"
+              main="Replaced the GDLauncher Color Scheme to match the Next Release"
             />
           </ul>
         </div>
-        <h2 className={styles.hdTextBlue}>WE LOVE YOU</h2>
-        <span className={styles.summary}>
-          We love our users, that's why we have a dedicated discord server just
-          to talk with all of them :)
-        </span>
-        <br />
-        <img
-          src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"
-          className={styles.discordImg}
-          onClick={openDiscord}
-        />
       </div>
     </Modal >
   );

@@ -55,10 +55,10 @@ export const UPDATE_URL =
 export const THEMES = {
   default: {
     name: 'Default',
-    primary: '#2980b9',
-    'secondary-color-1': '#34495e',
-    'secondary-color-2': '#2c3e50',
-    'secondary-color-3': '#212b36'
+    primary: '#406e8e',
+    'secondary-color-1': '#212b36',
+    'secondary-color-2': '#1c242d',
+    'secondary-color-3': '#101419'
   },
   carrotUniverse: {
     name: 'Carrot Universe',

@@ -53,34 +53,27 @@ const MyAccount = props => {
           checked={props.settings.sounds}
           onChange={props.setSounds}
         />
-        <SwitchSetting
-          mainText={t('EnableDiscordRPCTitle', 'Enable Discord RPC')}
-          description={t('EnableDiscordRPCDescription', 'Enable the Discord RPC Status')}
-          icon="sound"
-          checked={props.settings.discord}
-          onChange={props.setDiscord}
-        />
-        <SelectSetting
-          mainText={<span>{t('ReleaseChannel', 'GDLauncher Release Channel')}</span>}
-          description={t('ReleaseChannelDescription', 'Stable updates once a month, beta does update more often but it may have more bugs.')}
-          icon="rocket"
-          onChange={v => {
-            setChannel(v);
-            store.set(
-              'settings.releaseChannel',
-              v === 'Beta' ? 'beta' : 'latest'
-            );
-            message.info(
-              t('NeedToRestartToApplyChange', 'In order to apply this change you need to restart the launcher')
-            );
-          }}
-          options={['Stable', 'Beta']}
-          defaultValue={channel}
-        />
       </SettingCard>
     </div>
   );
 };
+
+
+function dashUuid(UUID) {
+  // UUID is segmented into: 8 - 4 - 4 - 4 - 12
+  // Then dashes are added between.
+
+  // eslint-disable-next-line
+  return (
+    `${
+      UUID.substring(0, 8)}-${
+      UUID.substring(8, 12)}-${
+      UUID.substring(12, 16)}-${
+      UUID.substring(16, 20)}-${
+      UUID.substring(20, 32)}`
+  );
+
+}
 
 function mapStateToProps(state) {
   return {
