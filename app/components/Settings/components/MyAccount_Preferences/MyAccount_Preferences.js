@@ -39,9 +39,9 @@ const MyAccount = props => {
           <span className={styles.info}>{props.username}</span>{' '}
           <CopyIcon text={props.username} />
           <div className={styles.divider} />
-          <span>{t('Email', 'Email')}</span>
-          <span className={styles.info}>{props.email}</span>{' '}
-          <CopyIcon text={props.email} />
+          <span>{t('UUID', 'UUID')}</span>
+          <span className={styles.info}>{props.uuid}</span>{' '}
+          <CopyIcon text={props.uuid} />
         </div>
       </div>
       <Title>{t('Preferences', 'Preferences')}</Title>
@@ -58,28 +58,12 @@ const MyAccount = props => {
   );
 };
 
-
-function dashUuid(UUID) {
-  // UUID is segmented into: 8 - 4 - 4 - 4 - 12
-  // Then dashes are added between.
-
-  // eslint-disable-next-line
-  return (
-    `${
-      UUID.substring(0, 8)}-${
-      UUID.substring(8, 12)}-${
-      UUID.substring(12, 16)}-${
-      UUID.substring(16, 20)}-${
-      UUID.substring(20, 32)}`
-  );
-
-}
-
 function mapStateToProps(state) {
   return {
     username: state.auth.displayName,
     email: state.auth.email,
-    settings: state.settings
+    settings: state.settings,
+    uuid: state.auth.uuid
   };
 }
 
