@@ -40,7 +40,7 @@ const MyAccount = props => {
           <CopyIcon text={props.username} />
           <div className={styles.divider} />
           <span>{t('UUID', 'UUID')}</span>
-          <span className={styles.info}>{props.uuid}</span>{' '}
+          <span className={styles.info}>{props.uuid.substring(0, 8)}-{props.uuid.substring(8, 12)}-{props.uuid.substring(12, 16)}-{props.uuid.substring(16, 20)}-{props.uuid.substring(20, 32)}</span>{' '}
           <CopyIcon text={props.uuid} />
         </div>
       </div>
