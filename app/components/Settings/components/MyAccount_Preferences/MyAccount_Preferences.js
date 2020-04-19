@@ -32,7 +32,7 @@ const MyAccount = props => {
       <Title>{t('MyAccount', 'My Account')}</Title>
       <div className={styles.accountInfo}>
         <div>
-          <CIcon size={70}>{props.username.charAt(0).toUpperCase()}</CIcon>
+          <CIcon size={70}><img src={`https://minotar.net/helm/${props.username}/70`}></img></CIcon>
         </div>
         <div>
           <span>{t('Username', 'Username')}</span>
