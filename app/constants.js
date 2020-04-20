@@ -51,7 +51,7 @@ export const DEFAULT_ARGS = `-Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInv
 } -Xms256m`;
 export const DEFAULT_MEMORY = 4096;
 export const UPDATE_URL =
-  'https://raw.githubusercontent.com/gorilla-devs/GDLauncher/master/package.json';
+  'https://raw.githubusercontent.com/CrankySupertoon/GDLauncher-Classic/master/package.json';
 export const THEMES = {
   default: {
     name: 'Default',
