@@ -13,13 +13,13 @@
     "sass",
     "webpack"
   ],
-  "homepage": "https://github.com/gorilla-devs/GDLauncher",
+  "homepage": "https://github.com/CrankySupertoon/GDLauncher-Classic",
   "bugs": {
-    "url": "https://github.com/gorilla-devs/GDLauncher/issues"
+    "url": "https://github.com/CrankySupertoon/GDLauncher-Classic/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gorilla-devs/GDLauncher.git"
+    "url": "git+https://github.com/CrankySupertoon/GDLauncher-Classic.git"
   },
   "license": "MIT",
   "author": {
@@ -311,8 +311,8 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "gorilla-devs",
-      "repo": "GDLauncher",
+      "owner": "CrankySupertoon",
+      "repo": "GDLauncher-Classic",
       "private": false
     }
   },
