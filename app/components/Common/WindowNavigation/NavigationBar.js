@@ -4,6 +4,7 @@ import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { ipcRenderer } from 'electron';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import styles from './NavigationBar.scss';
 import HorizontalMenu from './components/HorizontalMenu/HorizontalMenu';
@@ -32,6 +33,9 @@ export default props => {
       >
         <FontAwesomeIcon icon={faCog} className={styles.settings} />
       </Link>
+	  <Link>
+        <FontAwesomeIcon icon={faSignOutAlt} className={styles.logout} />
+      </Link>    
       {updateAvailable && (
         <div className={styles.updateAvailable}>
           <Link to="/autoUpdate">
