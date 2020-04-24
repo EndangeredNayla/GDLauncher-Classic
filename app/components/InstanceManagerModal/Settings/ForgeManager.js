@@ -16,6 +16,7 @@ import {
   GDL_LEGACYJAVAFIXER_MOD_URL
 } from '../../../constants';
 import vCompare from '../../../utils/versionsCompare';
+import vSort from 'version-sort';
 import colors from '../../../style/theme/colors.scss';
 import vSort from 'version-sort';
 import styles from './ForgeManager.scss';
