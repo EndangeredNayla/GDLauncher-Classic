@@ -34,7 +34,9 @@ export default props => {
         <FontAwesomeIcon icon={faCog} className={styles.settings} />
       </Link>
 	  <Link>
-        <FontAwesomeIcon icon={faSignOutAlt} className={styles.logout} />
+        <div onClick={() => props.logout()}>    
+            <FontAwesomeIcon icon={faSignOutAlt} className={styles.logout} />    
+        </div>
       </Link>    
       {updateAvailable && (
         <div className={styles.updateAvailable}>
