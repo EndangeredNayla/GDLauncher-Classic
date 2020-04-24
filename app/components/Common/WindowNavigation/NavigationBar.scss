@@ -30,6 +30,27 @@
     }
   }
 
+.logout {    
+    position: absolute;    
+    right: 10px;    
+    font-size: 24px;    
+    margin-top: 10px;    
+    color: $text-main-color;    
+    cursor: pointer;    
+    transition: all 0.2s ease-in-out;    
+    &:hover {    
+      color: $text-hover-color;    
+      transition: all 0.2s ease-in-out;    
+    }    
+    path {    
+      cursor: pointer;    
+    }    
+    path:hover {    
+      color: $text-hover-color;    
+      transition: all 0.2s ease-in-out;    
+    }    
+}
+
 .logoText {
     display: inline-block;
     color: #bdc3c7;
