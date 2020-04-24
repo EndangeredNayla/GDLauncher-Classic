@@ -15,7 +15,6 @@ import ga from './GAnalytics';
 import App from './containers/App';
 import store from './localStore';
 import { history } from './store/configureStore';
-import SideBar from './components/Common/SideBar/SideBar';
 import Navigation from './containers/Navigation';
 import SysNavBar from './components/Common/SystemNavBar/SystemNavBar';
 import { findJavaHome, isGlobalJavaOptions } from './utils/javaHelpers';
@@ -173,7 +172,6 @@ class RouteDef extends Component<Props> {
             location.pathname !== '/loginHelperModal' && (
               <div>
                 <Navigation />
-                <SideBar />
               </div>
             )}
           <Switch location={isModal ? this.previousLocation : location}>
