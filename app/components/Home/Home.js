@@ -9,6 +9,7 @@ import path from 'path';
 import { PACKS_PATH, THEMES } from '../../constants';
 import styles from './Home.scss';
 import News from './components/News/News';
+import Featured from './components/CurseModpacksFeatured/CurseModpacksFeatured';
 import Card from '../Common/Card/Card';
 
 // @ts-ignore
@@ -54,6 +55,9 @@ class Home extends Component<Props> {
         <main className={styles.content}>
           <div className={styles.innerContent}>
             <News news={this.props.news} />
+			<div className={styles.container}>
+				<Featured featured={this.props.featured} />
+			</div>
           </div>
         </main>
       </div>
