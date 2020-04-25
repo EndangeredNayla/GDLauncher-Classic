@@ -16,7 +16,7 @@ const Settings = ({ match, history }) => {
     <Modal
       history={history}
       header="false"
-      style={{ width: '100%', height: '100%', left: '0' }}
+      style={{ width: '100%', height: '100%', left: '0', top: '-50' }}
       backBtn={
         <div className={styles.closeBtn}>
           <FontAwesomeIcon icon={faWindowClose} />
