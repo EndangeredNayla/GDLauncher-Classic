@@ -1,6 +1,6 @@
 {
   "name": "gdlauncher",
-  "version": "0.13.1",
+  "version": "0.14.0",
   "description": "GDLauncher is simple, yet powerful Minecraft custom launcher with a strong focus on the user experience",
   "keywords": [
     "minecraft",
@@ -300,7 +300,8 @@
     "linux": {
       "target": [
         "AppImage",
-        "zip"
+        "zip",
+        "deb"
       ],
       "category": "Game",
       "artifactName": "${productName}-linux-setup.${ext}"

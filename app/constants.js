@@ -87,5 +87,12 @@ export const THEMES = {
     'secondary-color-1': '#3F4544',
     'secondary-color-2': '#343938',
     'secondary-color-3': '#272A2A'
-  }
+  },
+  legacydefault: {
+    name: 'Legacy Default',
+    primary: '#2980b9',
+    'secondary-color-1': '#34495e',
+    'secondary-color-2': '#2c3e50',
+    'secondary-color-3': '#212b36'
+  },
 };

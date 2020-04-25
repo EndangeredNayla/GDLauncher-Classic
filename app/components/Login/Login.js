@@ -77,7 +77,7 @@ function Login(props) {
         }}
       >
         <div className={styles.login_form}>
-          <h1 style={{ textAlign: 'center', fontSize: 30 }}>{t('MojangLogin', 'Minecraft Login')}</h1>
+          <h1 style={{ textAlign: 'center', fontSize: 32, fontWeight: 600}}>{t('MojangLogin', 'Minecraft Login')}</h1>
           <Form onSubmit={handleSubmit}>
             <FormItem>
               {getFieldDecorator('username', {
@@ -167,13 +167,13 @@ function Login(props) {
               size="large"
               type="primary"
               className={styles.login_form_button}
-              style={{ marginTop: '30px' }}
+              style={{ left: '30px'}}
               onClick={() => props.tryNativeLauncherProfiles()}
             >
               <span>
                 {t('LoginAs', 'Login As')}{' '}
                 <span
-                  style={{ fontStyle: 'italic', textDecoration: 'underline' }}
+                  style={{fontWeight: 600}}
                 >
                   {nativeLauncherProfiles}
                 </span>
@@ -186,7 +186,8 @@ function Login(props) {
             position: 'absolute',
             bottom: 40,
             right: 40,
-            color: '#bdc3c7'
+            width: 25,
+            color: '#ffffff'
           }}
         >
           {update && (

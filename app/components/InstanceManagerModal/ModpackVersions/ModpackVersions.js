@@ -39,7 +39,7 @@ const ModpackVersions = props => {
     setInstalledVersion(config.modpackVersion);
   };
 
-  
+
   const removeModpackFiles = async () => {
     const { overrideFiles, mods } = await readConfig(props.instance);
     // Deleting overrides
@@ -70,7 +70,7 @@ const ModpackVersions = props => {
     });
     await updateConfig(props.instance, { mods: mods.filter(mod => !mod.isModFromModpack) }, ['overrideFiles']);
   };
-  
+
   const switchVersion = async () => {
     setLoading(true);
     console.log(versions[selectedVersion])
@@ -85,13 +85,13 @@ const ModpackVersions = props => {
     initVersions();
     initInstalledVersion();
   }, []);
-  
+
   if (versions.length === 0) {
     return (
       <div>Loading...</div>
       )
     }
-    
+
     return (
       <div style={{
         height: '100%',
@@ -119,7 +119,7 @@ const ModpackVersions = props => {
             </Select.Option>
           ))}
         </Select>
-        <div style={{ height: 'calc(100% - 150px)', overflow: 'scroll', overflowX: 'hidden', backgroundColor: 'var(--secondary-color-2)', marginTop: 10 }}>
+        <div style={{ height: 'calc(100% - 200px)', overflow: 'scroll', overflowX: 'hidden', backgroundColor: 'var(--secondary-color-2)', marginTop: 10 }}>
           <span
             dangerouslySetInnerHTML={{
               __html: versions[selectedVersion].changelog

@@ -1,14 +1,16 @@
 .container {
-  width: 100%;
+  width: 130%;
   height: 150px;
-  margin: 0 auto;
+  padding: 25px;
+  position: absolute;
+
   .imgBg:hover {
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.10);
+    transform: scale(1.15);
   }
 
   div:first-child {
-    border-radius: 9px;
+    border-radius: 30px;
 
     div:first-child {
       div:first-child {

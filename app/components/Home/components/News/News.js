@@ -35,14 +35,15 @@ const News = props => (
                   position: 'absolute',
                   cursor: 'pointer',
                   pointerEvents: 'none',
-                  fontSize: 20,
-                  top: 90,
+                  fontSize: 28,
+                  top: 75,
                   display: 'inline-block',
-                  paddingLeft: 10
+                  paddingLeft: 10,
+                  fontWeight: 600,
                 }}
               >
                 {inf.title} <br />
-                <span style={{ fontSize: 14 }}>{inf.description}</span>
+                <span style={{ fontSize: 18 }}>{inf.description}</span>
               </div>
               <div
                 style={{

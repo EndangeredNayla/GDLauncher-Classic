@@ -6,7 +6,7 @@
   height: 200px;
   background: var(--secondary-color-2);
   color: $text-hover-color;
-  border-radius: 4px;
+  border-radius: 10px;
   flex-grow: 1;
   .header {
     width: 100%;
@@ -17,7 +17,7 @@
     text-align: center;
   }
   .content {
-    padding: 10px;
+    padding: 25px;
   }
 }
 

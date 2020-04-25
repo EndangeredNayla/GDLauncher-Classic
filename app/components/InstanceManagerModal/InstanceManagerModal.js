@@ -163,7 +163,7 @@ class InstanceManagerModal extends Component<Props> {
                   top: this.state.instanceIcon !== InstanceIcon ? 50 : 40
                 }}
               >
-                Change <br /> Icon
+                Change<br/>Icon
               </span>
               <img
                 className={styles.instanceIcon}

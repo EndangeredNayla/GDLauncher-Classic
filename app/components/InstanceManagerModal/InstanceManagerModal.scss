@@ -1,7 +1,8 @@
 .container {
   display: grid;
-  grid-template-columns: 1.1fr 3fr;
-  height: 100%;
+  grid-template-columns: 1.5fr 4fr;
+  height: 108%;
+  padding: 25px;
   width: 100%;
   font-family: 'GlacialIndifferenceRegular';
 }
@@ -42,7 +43,7 @@
   .instanceIconOverlay {
     transition: opacity 0.2s;
     position: absolute;
-    top: 10px;
+    top: 80.35px;
     border-radius: 50%;
     width: 100px;
     opacity: 0;
@@ -57,7 +58,7 @@
   .instanceIconOverlay {
     position: absolute;
     border-radius: 50%;
-    top: 10px;
+    top: 80.35px;
     width: 100px;
     opacity: 1;
     height: 100px;
@@ -65,8 +66,8 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   }
   .instanceIconText {
-    cursor: pointer;
-    opacity: 1;
+    top: 80.35px;
+    position: absolute;
   }
   .instanceIcon {
     cursor: pointer;
@@ -74,23 +75,23 @@
 }
 
 .instanceIconContainer:hover .resetIcon {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .resetIcon:hover {
-  color: white;
+  color: #c0392b;
 }
 
 .resetIcon {
   margin: 0;
   position: absolute;
-  top: 25px;
+  top: 131px;
   opacity: 0;
-  left: calc(50% - 5px);
+  left: calc(16.3%);
   transform: translate(-50%, -50%);
   z-index: 1000000000;
-  color: #c0392b;
-  font-size: 18px;
+  color: white;
+  font-size: 52px;
   transition: opacity 0.2s ease-in-out;
 }
 

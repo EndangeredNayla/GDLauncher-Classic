@@ -26,7 +26,7 @@
   display: inline-block;
   position: absolute;
   left: 0;
-  width: 130px;
+  width: 150px;
 }
 
 .icon__instanceName {
@@ -35,7 +35,8 @@
   position: absolute;
   text-align: center;
   left: 0;
-  margin: 0 5px;
+  margin: -2px 5px;
+  font-weight: 600;
   overflow: hidden !important;
   text-overflow: ellipsis;
 }
@@ -56,7 +57,7 @@
 .icon__image {
   width: 90px;
   height: 90px;
-  border-radius: 50%;
+  border-radius: 25%;
   background-size: 90px !important;
   transition: opacity 0.1s ease-in-out;
 }
@@ -64,12 +65,12 @@
 .main:hover {
   transition: background-color 0.25s;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
+  border-radius: 15px;
 }
 
 .selectedItem {
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
+  border-radius: 15px;
 }
 
 .icon__iconState {
@@ -97,7 +98,7 @@
 
 .warningIcon {
   @extend .icon__iconState;
-  color: #e74c3c;
+  color: #d7e73c;
   font-size: 18px;
   cursor: pointer;
   svg {
@@ -108,15 +109,16 @@
   }
 }
 .progressBarContainer {
-  height: 4px;
+  height: 10px;
   position: absolute;
   width: 100%;
   left: 0px;
-  bottom: 4px;
+  bottom: 0px;
   display: flex;
+  border-radius: 15px;
   justify-content: center;
   .progressBar {
-    height: 100%;
+    height: 65%;
     width: 80%;
     background-color: var(--secondary-color-3);
   }
@@ -124,10 +126,11 @@
     position: absolute;
     height: 100%;
     width: 80%;
+    border-radius: 15px;
     span {
       position: absolute;
       left: 0;
-      height: 100%;
+      height: 65%;
       background-color: var(--primary);
       z-index: 10;
     }

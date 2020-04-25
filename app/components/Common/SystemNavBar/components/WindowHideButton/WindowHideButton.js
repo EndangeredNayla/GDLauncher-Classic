@@ -20,7 +20,7 @@ export default class WindowHideButton extends Component<Props> {
         <button className={styles.CloseBtn} onClick={this.MinMaxWindow}>
           <FontAwesomeIcon
             icon={faWindowMinimize}
-            style={{ width: '30px', height: '25px' }}
+            style={{ width: '20px', height: '17px' }}
           />
         </button>
       </div>

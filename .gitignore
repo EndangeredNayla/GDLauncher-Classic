@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+log.txt
+npm-debug.log.*
 
 # Runtime data
 pids
@@ -49,6 +51,12 @@ dll
 main.js
 main.js.map
 
-.idea
-npm-debug.log.*
-log.txt
+# Webstorm Crap
+.idea/GDLauncher-Classic.iml
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml

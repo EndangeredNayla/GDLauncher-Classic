@@ -3,16 +3,13 @@
 .container {
   grid-column: 1;
   background: var(--secondary-color-2);
-  height: 100%;
-  padding-top: 50px;
-  position: relative;
+  height: 90%;
+  padding-top: 80px;
+  border-radius: 30px;
+  position: center;
 }
 
 .sideMenuContainer {
   float: right;
   margin-right: 15px;
-}
-
-.sideMenu {
-
 }

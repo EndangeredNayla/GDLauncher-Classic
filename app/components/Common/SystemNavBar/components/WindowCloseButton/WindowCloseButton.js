@@ -19,7 +19,7 @@ export default class WindowCloseButton extends Component<Props> {
         <button className={styles.CloseBtn} onClick={this.closeWindow}>
           <FontAwesomeIcon
             icon={faTimes}
-            style={{ width: '30px', height: '30px' }}
+            style={{ width: '20px', height: '22px' }}
           />
         </button>
       </div>
